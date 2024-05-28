@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Uneviano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff; /* rojo vino */
+            color: #8b0000;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #8b0000; /* rojo vino */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .logo {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 20px;
+            display: none; /* Ocultar todas las secciones inicialmente */
+        }
+        #Inicio {
+            display: block; /* Mostrar la pantalla principal inicialmente */
+        }
+        footer {
+            background: #800020; /* Rojo vino */
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
+        }
+        .imagen-ajustada {
+            width:  300px;  /* Ancho deseado */
+            height: auto;  /* Ajuste proporcional de la altura */
+            margin: 10px;  /* Margen entre imágenes */
+        }
+        .imagen-ajustada2 {
+            width:  600px;  /* Ancho deseado */
+            height: auto;  /* Ajuste proporcional de la altura */
+            margin: 10px;  /* Margen entre imágenes */
+        }
+        .imagen-ajustada3 {
+            width:  250px;  /* Ancho deseado */
+            height: auto;  /* Ajuste proporcional de la altura */
+            margin: 10px;  /* Margen entre imágenes */
+        }
+         .galeria {
+            display: flex;
+            flex-wrap: wrap;  /* Permitir que las imágenes se ajusten en múltiples líneas */
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="Logo-Colegio.png" alt="Logo Colegio Uneviano" class="logo">
+        <h1>Colegio Uneviano</h1>
+        <h5>Educando Para Un Nuevo Liderazgo</h5>
+    </header>
+
+    <nav>
+        <a onclick="showSection('Inicio')">Inicio</a>
+        <a onclick="showSection('historia')">Historia</a>
+        <a onclick="showSection('mision-vision')">Misión y Visión</a>
+        <a onclick="showSection('infraestructura-programas')">Infraestructura y Programas</a>
+        <a onclick="showSection('Educadores')">Educadores</a>
+        <a onclick="showSection('seccion-deportiva')">Sección Deportiva</a>
+    </nav>
+
+    <div id="Inicio" class="content">
+        <h1>Colegio Uneviano</h1>
+        <p>Bienvenido Al Colegio Uneviano. Educando Para Un Nuevo Liderazgo</p>
+        <img src="cole.jpeg" alt="Imagen Principal" class="imagen-ajustada2">
+        <img src="cole2.jpeg" alt="Imagen Principal" class="imagen-ajustada2">
+        
+    </div>
+    <div id="historia" class="content">
+        <h2>Historia</h2>
+        <p>El Colegio Uneviano fue fundado en el en 1990, en Santiago de los Caballeros, como parte de los esfuerzos de la UNEV por expandir su impacto educativo a niveles preuniversitarios. Desde sus inicios, la misión del colegio ha sido formar estudiantes con una educación integral que combine excelencia académica con valores éticos y cristianos.</p>
+        <p>El Colegio Uneviano, cuyo nombre completo es Colegio Universitario Uneviano, es una institución educativa privada vinculada a la Universidad Nacional Evangélica (UNEV). Se encuentra en República Dominicana y fue fundado con el objetivo de proporcionar una educación integral y de calidad basada en valores cristianos y principios académicos sólidos.</p>
+    </div>
+
+    <div id="mision-vision" class="content">
+        <h2>Misión y Visión</h2>
+        <p>La misión del Colegio Uneviano es proporcionar una educación cristiana de alta calidad que prepare a los estudiantes para ser ciudadanos responsables y comprometidos con su comunidad y el mundo. Su visión es ser una institución educativa de referencia, reconocida por su excelencia académica y su contribución al desarrollo integral de sus estudiantes.</p>
+    </div>
+
+    <div id="infraestructura-programas" class="content">
+        <h2>Infraestructura y Programas</h2>
+        <img src="frent.jpg" alt="Infraestructura del Colegio Uneviano" class="imagen-ajustada">
+        <p>El colegio cuenta con una infraestructura moderna que incluye aulas equipadas con tecnología avanzada, laboratorios de ciencias, bibliotecas, instalaciones deportivas y áreas recreativas. Ofrece educación desde el nivel inicial hasta el bachillerato, con un currículo que integra disciplinas académicas con formación en valores y ética cristiana. Además de los programas académicos regulares, el Colegio Uneviano promueve diversas actividades extracurriculares, incluyendo deportes, artes, música y proyectos comunitarios. Estas actividades están diseñadas para fomentar el desarrollo integral de los estudiantes, promoviendo habilidades sociales, liderazgo y responsabilidad cívica.</p>
+    </div>
+
+    <div id="Educadores" class="content">
+        <h2>Nuestros Maestras e Maestros</h2>
+        <div class="galeria">
+            <img src="prof.jpeg"  class="imagen-ajustada3">
+            <img src="prof2.jpeg"  class="imagen-ajustada3">
+            <img src="prof3.jpeg"  class="imagen-ajustada3">
+            <img src="prof4.jpeg"  class="imagen-ajustada3">
+            <img src="prof5.jpeg"  class="imagen-ajustada3">
+            <img src="prof6.jpeg"  class="imagen-ajustada3">
+            <img src="prof7.jpeg"  class="imagen-ajustada3">
+        </div>
+   
+    </div>
+    <div id="seccion-deportiva" class="content">
+        <h2>Sección Deportiva</h2>
+        <p>Olimpiadas Culturales: Participación en competencias y festivales culturales a nivel local, nacional e internacional, destacando en disciplinas como la música, el teatro y la danza.</p>
+        <p>Programas Deportivos: Variedad de deportes incluyendo fútbol, baloncesto, voleibol y atletismo, con entrenadores calificados y participación en torneos escolares.</p>
+
+        <div class="galeria">
+            <img src="depo.jpeg"  class="imagen-ajustada">
+            <img src="depo2.jpeg" class="imagen-ajustada">
+            <img src="depo3.jpeg" class="imagen-ajustada">
+            <img src="depo4.jpeg" class="imagen-ajustada">
+            <img src="depo5.jpeg" class="imagen-ajustada">
+            <img src="depo6.jpeg" class="imagen-ajustada">
+            <img src="depo7.jpeg" class="imagen-ajustada">
+            <img src="depo8.jpeg" class="imagen-ajustada">
+        </div>
+   c
+
+    <footer>
+        <p>&copy; 2024 Colegio Uneviano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
